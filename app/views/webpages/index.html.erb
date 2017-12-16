@@ -1,0 +1,15 @@
+<div class="container-fluid row">
+  <h1>LISTS</h1>
+  <% for i in 1..12 do %>
+  <div class="panel panel-default contents row col-xs-12 col-sm-6 col-lg-4">
+    <div class="panel-heading"><%= "TOPIC#{i}" %></div>
+    <div class="panel-body">
+      <div class="list-group">
+        <% for j in 1..12 do %>
+          <a href="#" class="list-group-item col-xs-12 col-md-6 col-lg-4"><%= "contents#{j}" %></a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
