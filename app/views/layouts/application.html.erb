@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
@@ -31,7 +31,9 @@
   <body>
     <%= yield %>
   </body>
-  <footer>
-    <p>Bootstrapシリーズ課題1</p>
-  </footer>
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="navbar-text footer">Bootstrapシリーズ課題1</p>
+    </div>
+  </nav>
 </html>
